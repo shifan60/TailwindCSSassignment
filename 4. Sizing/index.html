@@ -8,9 +8,9 @@
     <title>Sizing</title>
   </head>
   <body class="p-20">
-    1 Width 
+    Width
     <!-- https://tailwindcss.com/docs/width -->
-    <div class="bg-black container p-7 flex flex-col gap-5">
+     <div class="bg-black container p-7 flex flex-col gap-5">
       <div class="w-px bg-amber-500 text-transparent ">w-px</div>
       <div class="w-0.5 bg-amber-500 text-transparent">w-0.5</div>
       <div class="w-1 bg-amber-500 text-transparent">w-1</div>
@@ -45,125 +45,253 @@
       <div class="w-72 bg-amber-500 text-center">w-72</div>
       <div class="w-80 bg-amber-500 text-center">w-80</div>
       <div class="w-96 bg-amber-500 text-center">w-96</div>
+      <br>
+
+      <div class="flex text-center">
+        <div class="w-1/2 bg-blue-500 rounded-md  border border-2 border-white text-center">w-1/2</div>
+        <div class="w-1/2 bg-blue-500 rounded-md  border border-2 border-white text-center">w-1/2</div>
       </div>
-    2. Percentages 
-    <br>
-    *.Max Width 
-    <!-- https://tailwindcss.com/docs/max-width -->
-    <div class="container text-white bg-black p-7">
-      <div class=" max-w-[100px] bg-red-900 ">max-w-px</div>
-      <div class="max-w-3.5 bg-blue-900 ">max-w-3.5</div>
-      <div class="max-w-56 bg-green-400 ">max-w-56</div>
-      <div class="max-w-none bg-indigo-900 ">max-w-none</div>
-      <div class="max-w-xs bg-sky-900 ">max-w-xs</div>
-      <div class="max-w-sm bg-purple-700 ">max-w-sm</div>
-      <div class="max-w-md bg-cyan-900 ">max-w-md</div>
-      <div class="max-w-lg bg-yellow-900 ">max-w-lg</div>
-      <div class="max-w-xl bg-blue-900 ">max-w-xl</div>
-      <div class="max-w-7xl bg-sky-400 ">max-w-7xl</div>
-      <div class="max-w-min bg-red-700 ">max-w-min</div>
-      <div class="max-w-max bg-blue-900 ">max-w-max</div>
-      <div class="max-w-fit bg-indigo-600 ">max-w-fit</div>
-      <div class="max-w-screen-sm bg-yellow-700 ">max-w-screen-sm</div>
-      <div class="max-w-screen-md bg-blue-900 ">max-w-screen-md</div>
-      <div class="max-w-screen-xl bg-green-900 ">max-w-screen-xl</div>
+      <div class="flex">
+        <div class="w-2/5 bg-blue-500 rounded-md  border border-2 border-white text-center">w-2/5</div>
+        <div class="w-3/5 bg-blue-500 rounded-md  border border-2 border-white text-center">w-3/5</div>
+      </div>
+      <div class="flex  text-center">
+        <div class="w-1/3 bg-blue-500 rounded-md  border border-2 border-white text-center">w-1/3</div>
+        <div class="w-2/3 bg-blue-500 rounded-md  border border-2 border-white text-center">w-2/3</div>
+      </div>
+      <div class="flex  text-center ">
+        <div class="w-1/4 bg-blue-500 rounded-md  border border-2 border-white text-center">w-1/4</div>
+        <div class="w-3/4 bg-blue-500 rounded-md  border border-2 border-white text-center">w-3/4</div>
+      </div>
+      <div class="flex  text-center">
+        <div class="w-1/5 bg-blue-500 rounded-md  border border-2 border-white text-center">w-1/5</div>
+        <div class="w-4/5 bg-blue-500 rounded-md  border border-2 border-white text-center">w-4/5</div>
+      </div>
+      <div class="flex  text-center">
+        <div class="w-1/6 bg-blue-500 rounded-md  border border-2 border-white text-center">w-1/6</div>
+        <div class="w-5/6 bg-blue-500 rounded-md  border border-2 border-white text-center">w-5/6</div>
+      </div>
+      <br>
+      <div class="w-48 bg-amber-900 h-40 flex items-center">
+        <div class="w-full bg-amber-400 rounded-md text-center">w-full</div>
+      </div>
+      <br>
+      <div class="w-screen text-white bg-slate-500 text-center">
+        w-screen
+      </div>
+      <br>
+      <div class="w-full md:w-auto text-center bg-cyan-500">
+        w-auto
+      </div>
+      <div class="w-svw bg-violet-500 text-center">w-svw</div>      
+      <div class="w-lvw bg-violet-700 text-center">w-lvw</div>      
+      <div class="w-dvw bg-violet-900 text-center">w-dvw</div> 
+      <br>     
+      <div class="w-min bg-white text-center text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit quia animi earum quis, aspernatur dolore minus itaque iste sequi ex eos ea dignissimos excepturi laboriosam in enim perferendis adipisci repellat.</div>      
+      <div class="w-max bg-white text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, rerum cumque vero accusantium minus tenetur labore molestias, explicabo aut id eveniet incidunt dolorem fugit inventore recusandae neque iusto obcaecati architecto.</div>      
+      <div class="w-fix bg-white text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis corporis deleniti, natus neque corrupti vero nam sunt ipsam expedita maiores iste minima ab earum, quod doloribus explicabo ut excepturi? Quas.</div> 
+      <br>
+      <div class="w-[32rem] bg-lime-500 text-center">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta tempore harum, quae maxime dolor nulla placeat sapiente, laborum aliquid fuga cumque iste. Repellendus sunt ut natus voluptate obcaecati enim delectus.
+      </div>     
      </div>
-
-
-    3. Width of the viewport 
-    <!-- https://tailwindcss.com/docs/width#viewport-width -->
-    <div class="container text-white bg-black p-7">
-    <div class="w-96 bg-white text-black rounded-full">w-96</div>
-    <div class="w-80  bg-red-700  rounded-full ">w-80</div>
-    <div class="w-64 bg-green-800 rounded-full">w-64</div>
-    <div class="w-48 bg-yellow-700 rounded-full">w-48</div>
-    <div class="w-40 bg-purple-600  rounded-full">w-40</div>
-    <div class="w-32 bg-indigo-900 rounded-full">w-32</div>
-    <div class="w-24 bg-sky-600 rounded-full">w-24</div>
-    </div>
-
-    * 100% of container 
-    <div class="container text-white bg-black p-7">
-    <div class="flex bg-red-400">
-      <div class="w-1/2  ">w-1/2</div>
-      <div class="w-1/2  ">w-1/2</div>
-    </div>
-    <div class="flex bg-red-500">
-      <div class="w-2/5 ">w-2/5</div>
-      <div class="w-3/5 ">w-3/5</div>
-    </div>
-    <div class="flex bg-red-600">
-      <div class="w-1/3 ">w-1/3</div>
-      <div class="w-2/3 ">w-2/3</div>
-    </div>
-    <div class="flex bg-red-700">
-      <div class="w-1/4 ">w-1/4</div>
-      <div class="w-3/4 ">w-3/4</div>
-    </div>
-    <div class="flex bg-red-800">
-      <div class="w-1/5 ">w-1/5</div>
-      <div class="w-4/5 ">w-4/5</div>
-    </div>
-    <div class="flex bg-red-900">
-      <div class="w-1/6 ">w-1/6</div>
-      <div class="w-5/6 ">w-5/6</div>
-    </div>
-    <div class="w-full bg-blue-400">w-full</div>
-  </div>
-
-    3. Arbitrary Width 
-    <!-- https://tailwindcss.com/docs/min-width#arbitrary-values -->
-    <div class="container text-white bg-black p-7">
-      <div class="w-[96px] bg-sky-200 ">w-96</div>
-        <div class="min-w-[400px] bg-sky-400 ">min-w-400px</div>
-        <div class="min-w-[360px] bg-sky-500 ">min-w-360px</div>
-        <div class="min-w-[260px]  bg-sky-600">min-w-260px</div>
-        <div class="min-w-[220px] bg-sky-700 ">min-w-220px</div>
-        <div class="min-w-[180px] bg-sky-800 ">min-w-180px</div>
-        <div class="min-w-[100px] bg-sky-900">min-w-100px</div>
-        <div class="min-w-full bg-blue-900">min-w-full</div> 
+    Max Width
+    <!-- https://tailwindcss.com/docs/max-width -->
+     <div class="bg-black container p-7 flex flex-col gap-5">
+      <div class="max-w-px bg-violet-500 text-transparent ">max-w-px</div>
+      <div class="max-w-0.5 bg-violet-500 text-transparent">max-w-0.5</div>
+      <div class="max-w-1 bg-violet-500 text-transparent">max-w-1</div>
+      <div class="max-w-1.5 bg-violet-500 text-transparent">max-w-1.5</div>
+      <div class="max-w-2 bg-violet-500 text-transparent">max-w-2</div>
+      <div class="max-w-2.5 bg-violet-500 text-transparent">max-w-2.5</div>
+      <div class="max-w-3 bg-violet-500 text-transparent">max-w-3</div>
+      <div class="max-w-3.5 bg-violet-500 text-transparent">max-w-3.5</div>
+      <div class="max-w-4 bg-violet-500 text-transparent">max-w-4</div>
+      <div class="max-w-5 bg-violet-500 text-transparent">max-w-5</div>
+      <div class="max-w-6 bg-violet-500 text-transparent">max-w-6</div>
+      <div class="max-w-7 bg-violet-500 text-center ">max-w-7</div>
+      <div class="max-w-8 bg-violet-500 text-center ">max-w-8</div>
+      <div class="max-w-9 bg-violet-500 text-center">max-w-9</div>
+      <div class="max-w-10 bg-violet-500 text-center">max-w-10</div>
+      <div class="max-w-11 bg-violet-500 text-center">max-w-11</div>
+      <div class="max-w-12 bg-violet-500 text-center">max-w-12</div>
+      <div class="max-w-14 bg-violet-500 text-center">max-w-14</div>
+      <div class="max-w-16 bg-violet-500 text-center">max-w-16</div>
+      <div class="max-w-20 bg-violet-500 text-center">max-w-20</div>
+      <div class="max-w-24 bg-violet-500 text-center">max-w-24</div>
+      <div class="max-w-28 bg-violet-500 text-center">max-w-28</div>
+      <div class="max-w-32 bg-violet-500 text-center">max-w-32</div>
+      <div class="max-w-36 bg-violet-500 text-center">max-w-36</div>
+      <div class="max-w-40 bg-violet-500 text-center">max-w-40</div>
+      <div class="max-w-44 bg-violet-500 text-center">max-w-44</div>
+      <div class="max-w-48 bg-violet-500 text-center">max-w-48</div>
+      <div class="max-w-52 bg-violet-500 text-center">max-w-52</div>
+      <div class="max-w-56 bg-violet-500 text-center">max-w-56</div>
+      <div class="max-w-60 bg-violet-500 text-center">max-w-60</div>
+      <div class="max-w-64 bg-violet-500 text-center">max-w-64</div>
+      <div class="max-w-72 bg-violet-500 text-center">max-w-72</div>
+      <div class="max-w-80 bg-violet-500 text-center">max-w-80</div>
+      <div class="max-w-96 bg-violet-500 text-center">max-w-96</div>
+      <div class="max-w-none bg-violet-500 text-center">max-w-none</div>
+      <div class="max-w-xs bg-violet-500 text-center">max-w-xs</div>
+      <div class="max-w-sm bg-violet-500 text-center">max-w-sm</div>
+      <div class="max-w-md bg-violet-500 text-center">max-w-md</div>
+      <div class="max-w-lg bg-violet-500 text-center">max-w-lg</div>
+      <div class="max-w-xl bg-violet-500 text-center">max-w-xl</div>
+      <div class="max-w-2xl bg-violet-500 text-center">max-w-2xl</div>
+      <div class="max-w-3xl bg-violet-500 text-center">max-w-3xl</div>
+      <div class="max-w-4xl bg-violet-500 text-center">max-w-4xl</div>
+      <div class="max-w-5xl bg-violet-500 text-center">max-w-5xl</div>
+      <div class="max-w-6xl bg-violet-500 text-center">max-w-6xl</div>
+      <div class="max-w-7xl bg-violet-500 text-center">max-w-7xl</div>
+      <div class="max-w-full bg-violet-500 text-center">max-w-full</div>
+      <div class="max-w-min bg-violet-500 text-center">max-w-min</div>
+      <div class="max-w-max bg-violet-500 text-center">max-w-max</div>
+      <div class="max-w-fit bg-violet-500 text-center">max-w-fit</div>
+      <div class="max-w-prose bg-violet-500 text-center">max-w-prose</div>
+      <div class="max-w-screen-sm bg-violet-500 text-center">max-w-screen-sm</div>
+      <div class="max-w-screen-md bg-violet-500 text-center">max-w-screen-md</div>
+      <div class="max-w-screen-xl bg-violet-500 text-center">max-w-screen-xl</div>
+      <div class="max-w-screen-2xl bg-violet-500 text-center">max-w-screen-2xl</div>
+      <br>
+      <div class="text-sm max-w-prose text-white">
+        <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollar idea right there. Just sell the tops.</p>
       </div>
-
-    4 Height (Most of the same options as widths)
-    <!-- https://tailwindcss.com/docs/height -->
-    <div class="container text-white bg-black p-7 flex gap-3  ">
-    <div class="h-10 bg-red-200">h-96</div>
-<div class="h-24 bg-red-300">h-24</div>
-<div class="h-32 bg-red-400 ">h-32</div>
-<div class="h-40 bg-red-500 ">h-40</div>
-<div class="h-48 bg-red-600 ">h-48</div>
-<div class="h-64 bg-red-700 ">h-64</div>
-<div class="h-80 bg-red-800 ">h-80</div>
-</div>
-
-    ** Min Height 
-    <!-- https://tailwindcss.com/docs/min-height -->
-    <div class="container text-black bg-black p-7">
-      <div class="h-96 ">     
-        <div class="min-h-[260px] bg-purple-300">min-h-80</div>
-        <div class="min-h-[220px] bg-purple-400">min-h-64</div>
-        <div class="min-h-[180px] bg-purple-500">min-h-48</div>
-        <div class="min-h-[160px] bg-purple-600">min-h-40</div>
-        <div class="min-h-[120px] bg-purple-700">min-h-32</div>
-        <div class="min-h-[80px]  bg-purple-800">min-h-24</div>
-        <div class="min-h-full  bg-purple-900 ">min-h-full</div>
+      <br>
+      <div class="text-base max-w-prose text-white">
+        <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollar idea right there. Just sell the tops.</p>
+      </div>
+      <br>
+      <div class="text-xl max-w-prose text-white">
+        <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollar idea right there. Just sell the tops.</p>
+      </div>
+      <div class="max-w-[220px] text-white">
+        <p>Oh yeah. It's the best part. It's crunchy, it's explosive, it's where the muffin breaks free of the pan and sort of does it's own thing. I'll tell you. That's a million dollar idea right there. Just sell the tops.</p>
       </div>
       </div>
-
-    **Max Height
-    <!-- https://tailwindcss.com/docs/max-height -->
-    <div class="container text-white bg-black p-7">
-    <div class="h-96 ">
-      <div class="h-full max-h-80 bg-indigo-300">max-h-80</div>
-      <div class="h-full max-h-64 bg-indigo-400">max-h-64</div>
-      <div class="h-full max-h-48 bg-indigo-500">max-h-48</div>
-      <div class="h-full max-h-40 bg-indigo-600">max-h-40</div>
-      <div class="h-full max-h-32 bg-indigo-700">max-h-32</div>
-      <div class="h-full max-h-24 bg-indigo-800">max-h-24</div>
-      <div class="h-full max-h-full bg-indigo-900">max-h-full</div>
-    </div>
-</div>
-    <!-- Full screen height -->
-    <!-- Width Auto -->
+      Height
+      <div class="container bg-black p-7 ">
+        <div class="flex gap-2">
+          <div class="h-96 bg-lime-500 w-20">h-96</div>
+          <div class="h-80 bg-lime-500 w-20">h-80</div>
+          <div class="h-64 bg-lime-500 w-20">h-64</div>
+          <div class="h-48 bg-lime-500 w-20">h-48</div>
+          <div class="h-40 bg-lime-500 w-20">h-40</div>
+          <div class="h-32 bg-lime-500 w-20">h-32</div>
+          <div class="h-24 bg-lime-500 w-20">h-24</div>
+          <div class="h-0.5 bg-lime-500 w-20">h-0.5</div>
+          <div class="h-1 bg-lime-500 w-20">h-1</div>
+        </div>
+        <br>
+        <div class="h-48 bg-pink-800">
+          <div class="h-full bg-pink-400 w-40">
+            h-full
+          </div>
+        </div>
+        <br>
+        <div class="h-screen bg-orange-400">
+          h-screen
+        </div>
+        <br>
+        <div class="flex gap-2">
+          <div class="h-dvh w-40 bg-cyan-500 text-center">
+            Dynamic viewport height
+          </div>
+          <div class="h-svh w-40 bg-cyan-500 text-center">
+            smallest viewport height
+          </div>
+          <div class="h-lvh w-40 bg-cyan-500 text-center">
+            largest viewport height
+          </div>
+        </div>
+        <br>
+        <div class="h-[32rem] text-white text-center bg-indigo-800 w-36">
+          h-[32rem]
+        </div>
+        <br>
+     <div class="flex gap-2 text-center">
+      <div class="h-96 w-20 ">
+        <div class="h-1/2 bg-blue-500 border-2 border border-white rounded-md ">h-1/2</div>
+        <div class="h-1/2 bg-blue-500 rounded-md border-2 border border-white">h-1/2</div>
+      </div>
+      <div class="h-96 w-20 ">
+        <div class="h-2/5 bg-purple-900 rounded-md border-2 border border-white">h-2/5</div>
+        <div class="h-3/5 bg-purple-900 rounded-md border-2 border border-white">h-3/5</div>
+      </div>
+      <div class=" h-96 w-20 text-center">
+        <div class="h-1/3 bg-cyan-500 rounded-md border-2 border border-white">h-1/3</div>
+        <div class="h-2/3 bg-cyan-500 rounded-md border-2 border border-white">h-2/3</div>
+      </div>
+      <div class="h-96 w-20 text-center ">
+        <div class="h-1/4 bg-yellow-500 rounded-md border-2 border border-white">h-1/4</div>
+        <div class="h-3/4 bg-yellow-500 rounded-md border-2 border border-white">h-3/4</div>
+      </div>
+      <div class="h-96 w-20 text-center">
+        <div class="h-1/5 bg-red-500 rounded-md border-2 border border-white">h-1/5</div>
+        <div class="h-4/5 bg-red-500 rounded-md border-2 border border-white">h-4/5</div>
+      </div>
+      <div class="h-96 w-20 text-center">
+        <div class="h-1/6 bg-slate-500 rounded-md border-2 border border-white">h-1/6</div>
+        <div class="h-5/6 bg-slate-500 rounded-md border-2 border border-white">h-5/6</div>
+      </div>
+     </div>
+       </div>
+      Min-Height
+     <div class="bg-black container p-7">
+      <div class="flex gap-2 items-center justify-center h-96 bg-red-500">
+      <div class="min-h-1 bg-white text-black w-20">min-h-1</div> 
+      <div class="min-h-0.5 bg-white text-black w-20">min-h-0.5</div> 
+      <div class="min-h-10 bg-white text-black w-20">min-h-10</div>
+      <div class="min-h-24 bg-white text-black w-20">min-h-24</div>
+      <div class="min-h-32 bg-white text-black w-20">min-h-32</div>
+      <div class="min-h-40 bg-white text-black w-20">min-h-40</div>
+      <div class="min-h-48 bg-white text-black w-20">min-h-48</div>
+      <div class="min-h-64 bg-white text-black w-20">min-h-64</div>
+      <div class="min-h-full bg-white text-black w-20">min-h-full</div>
+      </div>
+      <br>
+      <div class=" bg-zinc-500 min-h-screen ">
+        min-h-screen
+        </div> 
+        <br>
+        <div class="h-[400px] bg-yellow-400 border border-4 border-orange-500 ">
+          <div class="min-h-[220px] bg-yellow-200 border border-4 border-red-800 ">
+            min-h-[220px]
+          </div>
+        </div>
+      </div>
+      Max-Height 
+      <div class="container bg-black p-7 ">
+        <div class="h-96 flex gap-2 bg-pink-200">
+          <div class="h-full max-h-full bg-pink-800 w-20">max-h-full</div>
+          <div class="h-full max-h-80 bg-pink-800 w-20">max-h-80</div>
+          <div class="h-full max-h-64  bg-pink-800 w-20">max-h-64</div>
+          <div class="h-full max-h-48  bg-pink-800 w-20">max-h-48</div>
+          <div class="h-full max-h-40  bg-pink-800 w-20 ">max-h-40</div>
+          <div class="h-full max-h-32  bg-pink-800 w-20">max-h-32</div>
+          <div class="h-full max-h-24  bg-pink-800 w-20">max-h-24</div>
+        </div>
+      <br>
+      <div class="max-h-[220px] bg-pink-100">
+        max-h-[220px]
+      </div>
+    <div class="bg-black p-7 container">
+      <div class="flex flex gap-2">
+      <div class="size-16 bg-slate-400 rounded-md">size-16</div>
+      <div class="size-20 bg-slate-400 rounded-md">size-20</div>
+      <div class="size-24 bg-slate-400 rounded-md">size-24</div>
+      <div class="size-32 bg-slate-400 rounded-md">size-32</div>
+      <div class="size-40 bg-slate-400 rounded-md">size-40</div>
+      </div>
+      <br>
+      <div class="h-96 w-96  ">
+        <div class="size-full flex justify-center items-center hover:size-48 bg-red-500 hover:bg-red-300 rounded-md">
+          size-full hover:size-48
+        </div>
+      </div>
+      <br>
+      <div class="size-[32rem] bg-pink-600 flex justify-center items-center rounded-md">
+        size-[32rem]
+      </div>
   </body>
 </html>
