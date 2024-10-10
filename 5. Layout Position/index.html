@@ -8,7 +8,133 @@
     <title>TailwindCSS</title>
   </head>
   <body class="p-20">
+    1.position
     <!-- https://tailwindcss.com/docs/position -->
+    <div class="container text-white bg-black p-7">
+   * Pin to top left corner 
+<div class="relative h-32 w-32 bg-green-400">
+  <div class="absolute left-0 top-0 h-16 w-16 ...">01</div>
+</div>
+
+* Span top edge 
+<div class="relative h-32 w-32 bg-red-400">
+  <div class="absolute inset-x-0 top-0 h-16 ...">02</div>
+</div>
+
+* Pin to top right corner 
+<div class="relative h-32 w-32 bg-blue-400">
+  <div class="absolute top-0 right-0 h-16 w-16 ...">03</div>
+</div>
+
+* Span left edge 
+<div class="relative h-32 w-32 bg-purple-400">
+  <div class="absolute inset-y-0 left-0 w-16 ...">04</div>
+</div>
+
+* Fill entire parent 
+<div class="relative h-32 w-32 bg-yellow-400">
+  <div class="absolute inset-0 ...">05</div>
+</div>
+
+ * Span right edge 
+<div class="relative h-32 w-32 bg-lime-400">
+  <div class="absolute inset-y-0 right-0 w-16 ...">06</div>
+</div>
+
+ * Pin to bottom left corner 
+<div class="relative h-32 w-32 bg-cyan-400">
+  <div class="absolute bottom-0 left-0 h-16 w-16 ...">07</div>
+</div>
+
+ * Span bottom edge 
+<div class="relative h-32 w-32 bg-red-800">
+  <div class="absolute inset-x-0 bottom-0 h-16 ...">08</div>
+</div>
+
+ * Pin to bottom right corner 
+<div class="relative h-32 w-32 bg-green-800">
+  <div class="absolute bottom-0 right-0 h-16 w-16 ...">09</div>
+</div>
+
+<div dir="ltr">
+  <div class="relative h-32 w-32 ...">
+    <div class="absolute h-14 w-14 top-0 start-0 ..."></div>
+  </div>
+<div>
+<div>
+</div>
+      2.Display
     <!-- https://tailwindcss.com/docs/display -->
+    <div class="container text-white bg-black p-7">
+    <div>
+      When controlling the flow of text, using the CSS property
+      <span class="inline">display: inline</span>
+      will cause the text inside the element to wrap normally.
+    
+      While using the property <span class="inline-block">display: inline-block</span>
+      will wrap the element to prevent the text inside from extending beyond its parent.
+    
+      Lastly, using the property <span class="block">display: block</span>
+      will put the element on its own line and fill its parent.
+    </div>
+</div>
+ *Grid 
+ <div class="container text-white bg-black p-7">
+<div class="p-4 bg-red-600">
+  <div class="flow-root">
+    <div class="my-4">Well, let me tell you something, ...</div>
+  </div>
+  <div class="flow-root ">
+    <div class="my-4 ">Sure, go ahead, laugh if you want...</div>
+  </div>
+</div>
+*Inline grid 
+<div class="container text-white bg-green-500 p-7">
+<span class="inline-grid grid-cols-3 gap-4 ">
+  <span>01</span>
+  <span>02</span>
+  <span>03</span>
+  <span>04</span>
+  <span>05</span>
+  <span>06</span>
+</span>
+<span class="inline-grid grid-cols-3 gap-4 ">
+  <span>01</span>
+  <span>02</span>
+  <span>03</span>
+  <span>04</span>
+  <span>05</span>
+  <span>06</span>
+</span>
+</div>
+* Table
+<div class="container text-white bg-sky-600 p-7">
+  <div class="table w-full ...">
+    <div class="table-header-group ...">
+      <div class="table-row">
+        <div class="table-cell text-left ...">Song</div>
+        <div class="table-cell text-left ...">Artist</div>
+        <div class="table-cell text-left ...">Year</div>
+      </div>
+    </div>
+    <div class="table-row-group">
+      <div class="table-row">
+        <div class="table-cell ...">The Sliding Mr. Bones (Next Stop, Pottersville)</div>
+        <div class="table-cell ...">Malcolm Lockyer</div>
+        <div class="table-cell ...">1961</div>
+      </div>
+      <div class="table-row">
+        <div class="table-cell ...">Witchy Woman</div>
+        <div class="table-cell ...">The Eagles</div>
+        <div class="table-cell ...">1972</div>
+      </div>
+      <div class="table-row">
+        <div class="table-cell ...">Shining Star</div>
+        <div class="table-cell ...">Earth, Wind, and Fire</div>
+        <div class="table-cell ...">1975</div>
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>

@@ -8,12 +8,310 @@
     <title>Borders</title>
   </head>
   <body>
-    <!-- Border Width & Colors -->
+     1.Border Width & Colors
     <!-- https://tailwindcss.com/docs/border-width -->
+    <div class="container text-white bg-black p-7 flex gap-6">
+      <div class=" border border-sky-500 w-24 py-2 px-4 text-center rounded-lg ">Border</div><BR>
+      <div class=" border border-sky-600 w-24 py-2 px-4 text-center rounded-md border-2">Border-2</div>
+      <div class=" border border-sky-700 w-24 py-2 px-4 text-centerr ounded-sm border-4 ">Border-4</div>
+      <div class=" border border-sky-800 w-24 py-2 px-4 text-center rounded-lg border-8">Border-8</div>
+      <div class=" border-x-2 border-sky-800 w-24 py-2 px-4 text-center rounded-lg">Border-x</div>
+      <div class=" border-t-4 border-sky-800 w-24 py-2 px-4 text-center rounded-lg">Border-t</div>
+      <div class=" border-b-2 border-sky-800 w-24 py-2 px-4 text-center rounded-lg">Border-b</div>
+      <div class=" border-y-8 border-sky-800 w-24 py-2 px-4 text-center rounded-lg">Border-y</div>
+      <div class=" border-l-2 border-sky-800 w-24 py-2 px-4 text-center rounded-lg">Border-l</div>
+      <div class=" border-r-2 border-sky-800 w-24 py-2 px-4 text-center rounded-lg">Border-r</div>
+      <div class=" border-s-4 border-sky-800 w-24 py-2 px-4 text-center rounded-lg">Border-s</div>
+      <div class=" border-e-2 border-sky-800 w-24 py-2 px-4 text-center rounded-lg">Border-e</div>
+      </div>
+   
+        * Dividing y
+        <div class="container text-white bg-black p-7 ">
+        <div class="divide-y divide-slate-700 bg-cyan-600 text-center">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        </div>
+        * Dividing X
+        <div class="container text-white bg-black p-7 bg-yellow-600 ">
+        <div class="grid grid-cols-3 divide-x border">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        </div>
+        *Dividing Y reverse
+        <div class="container text-white  p-7 bg-yellow-900 text-center ">
+        <div class="flex flex-col-reverse divide-y divide-y-reverse border">
+          <div>01</div>
+          <div>02</div>
+          <div>03</div>
+        </div>
+        </div>
+        *Hover
+        <div class="container text-white  p-7 bg-red-900 text-center ">
+        <button class="bg-sky-500 hover:bg-blue-700 ...">
+         Try Hover...
+        </button>
+        </div>
+        <br>
 
-    <!-- Border Radius -->
-    <!-- https://tailwindcss.com/docs/border-radius -->
+ *Left to Right
+ <div class="container text-white p-7 bg-cyan-600  ">
+ <div dir="ltr">
+  <div class="border-s-4  rounded-lg px-2 py-4 w-24  border-2">Left to Right</div>
+</div>
+</div>
 
-    <!-- Specific Sides -->
+*right to Left 
+<div dir="rtl">
+  <div class="container text-white  p-7 bg-cyan-900  ">
+    <div class="border-s-4  rounded-lg px-2 py-4 w-24  border-2 bg-cyan-800">Right To Left</div>
+  </div>
+  </div>
+ 
+  Border Radius 
+
+  <!-- https://tailwindcss.com/docs/border-radius -->
+
+  <div class="bg-black container p-7 text-black font-bold flex items-center justify-center  ">
+    <div class="flex  flex-wrap w-[970px] gap-10">
+      <div class="w-24 h-24 bg-pink-200 rounded-sm border-4 border-pink-800 flex items-center justify-center">
+        rounded-sm
+      </div>
+      <div class="w-24 h-24 bg-pink-200 border-4 border-pink-800 rounded flex items-center justify-center">
+        rounded
+      </div>
+      <div class="w-24 h-24 bg-pink-200  border-4 border-pink-800 rounded-md flex items-center justify-center">
+        rounded-md
+      </div>
+      <div class="w-24 h-24 bg-pink-200 rounded-lg  border-4 border-pink-800 flex items-center justify-center">
+        rounded-lg
+      </div>
+      <div class="w-24 h-24 bg-pink-200 rounded-xl  border-4 border-pink-800 flex items-center justify-center">
+        rounded-xl
+      </div>
+      <div class="w-24 h-24 bg-pink-200 rounded-2xl  border-4 border-pink-800 flex items-center justify-center">
+        rounded-2xl
+      </div>
+      <div class="w-24 h-24 bg-pink-200 rounded-3xl  border-4 border-pink-800 flex items-center justify-center">
+        rounded-3xl
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s-none rounded-full border-4 border-blue-800 flex items-center justify-center">
+        rounded-s-none
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s-sm  border-4 border-blue-800 flex items-center justify-center">
+        rounded-s-sm
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s border-4 border-blue-800 flex items-center justify-center">
+        rounded-s
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s-md  border-4 border-blue-800 flex items-center justify-center">
+        rounded-s-md
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s-lg  border-4 border-blue-800 flex items-center justify-center">
+        rounded-s-lg
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s-xl  border-4 border-blue-800 flex items-center justify-center">
+        rounded-s-xl
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s-2xl  border-4 border-blue-800 flex items-center justify-center">
+        rounded-s-2xl
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s-3xl  border-4 border-blue-800 flex items-center justify-center">
+        rounded-s-3xl
+      </div>
+      <div class="w-24 h-24 bg-blue-200 rounded-s-full  border-4 border-blue-800 flex items-center justify-center">
+        rounded-s-full
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e-none rounded-full  border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e-none
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e-sm  border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e-sm
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e-md border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e-md
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e-lg  border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e-lg
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e-xl  border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e-xl
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e-2xl border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e-2xl
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e-3xl border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e-3xl
+      </div>
+      <div class="w-24 h-24 bg-yellow-200 rounded-e-full border-4 border-yellow-800 flex items-center justify-center">
+        rounded-e-full
+      </div>
+      <!-- Specific Sides -->
+      <div class="w-24 h-24 bg-green-200 rounded-t-none rounded-full  border-4 border-green-800 flex items-center justify-center">
+        rounded-t-none
+      </div>
+      <div class="w-24 h-24 bg-green-200 rounded-t-sm  border-4 border-green-800 flex items-center justify-center">
+        rounded-t-sm
+      </div>
+      <div class="w-24 h-24 bg-green-200 rounded-t border-4 border-green-800 flex items-center justify-center">
+        rounded-t
+      </div>
+      <div class="w-24 h-24 bg-green-200 rounded-t-md  border-4 border-green-800 flex items-center justify-center">
+        rounded-t-md
+      </div>
+      <div class="w-24 h-24 bg-green-200 rounded-t-lg  border-4 border-green-800 flex items-center justify-center">
+        rounded-t-lg
+      </div>
+      <div class="w-24 h-24 bg-green-200 rounded-t-xl  border-4 border-green-800 flex items-center justify-center">
+        rounded-t-xl
+      </div>
+      <div class="w-24 h-24 bg-green-200 rounded-t-2xl  border-4 border-green-800 flex items-center justify-center">
+        rounded-t-2xl
+      </div>
+      <div class="w-24 h-24 bg-green-200 rounded-t-3xl  border-4 border-green-800 flex items-center justify-center">
+        rounded-t-3xl
+      </div>
+      <div class="w-24 h-24 bg-green-200 rounded-t-full  border-4 border-green-800 flex items-center justify-center">
+        rounded-t-full
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r-none rounded-full border-4 border-violet-800 flex items-center justify-center">
+        rounded-r-none
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r-sm border-4 border-violet-800 flex items-center justify-center">
+        rounded-r-sm
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r border-4 border-violet-800 flex items-center justify-center">
+        rounded-r
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r-md border-4 border-violet-800 flex items-center justify-center">
+        rounded-r-md
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r-lg border-4 border-violet-800 flex items-center justify-center">
+        rounded-r-lg
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r-xl border-4 border-violet-800 flex items-center justify-center">
+        rounded-r-xl
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r-2xl border-4 border-violet-800 flex items-center justify-center">
+        rounded-r-2xl
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r-3xl border-4 border-violet-800 flex items-center justify-center">
+        rounded-r-3xl
+      </div>
+      <div class="w-24 h-24 bg-violet-200 rounded-r-full border-4 border-violet-800 flex items-center justify-center">
+        rounded-r-full
+      </div>
+      <div class="w-24 h-24 bg-indigo-800 rounded-b-none rounded-full border-4 border-indigo-200 flex items-center justify-center">
+        rounded-b-none
+      </div>
+      <div class="w-24 h-24  bg-indigo-800 rounded-b-sm border-4 border-indigo-200  flex items-center justify-center">
+        rounded-b-sm
+      </div>
+      <div class="w-24 h-24  bg-indigo-800 rounded-b border-4 border-indigo-200  flex items-center justify-center">
+        rounded-b
+      </div>
+      <div class="w-24 h-24  bg-indigo-800 rounded-b-md border-4 border-indigo-200  flex items-center justify-center">
+        rounded-b-md
+      </div>
+      <div class="w-24 h-24  bg-indigo-800 rounded-b-lg border-4 border-indigo-200  flex items-center justify-center">
+        rounded-b-lg
+      </div>
+      <div class="w-24 h-24  bg-indigo-800 rounded-b-xl border-4 border-indigo-200  flex items-center justify-center">
+        rounded-b-xl
+      </div>
+      <div class="w-24 h-24  bg-indigo-800 rounded-b-2xl border-4 border-indigo-200  flex items-center justify-center">
+        rounded-b-2xl
+      </div>
+      <div class="w-24 h-24  bg-indigo-800 rounded-b-3xl border-4 border-indigo-200  flex items-center justify-center">
+        rounded-b-3xl
+      </div>
+      <div class="w-24 h-24  bg-indigo-800 rounded-b-full border-4 border-indigo-200  flex items-center justify-center">
+        rounded-b-full
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l-none rounded-full border-4 border-pink-200  flex items-center justify-center">
+        rounded-l-none
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l-sm border-4 border-pink-200  flex items-center justify-center">
+        rounded-l-sm
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l border-4 border-pink-200  flex items-center justify-center">
+        rounded-l
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l-md border-4 border-pink-200  flex items-center justify-center">
+        rounded-l-md
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l-lg border-4 border-pink-200  flex items-center justify-center">
+        rounded-l-lg
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l-xl border-4 border-pink-200  flex items-center justify-center">
+        rounded-l-xl
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l-2xl border-4 border-pink-200  flex items-center justify-center">
+        rounded-l-2xl
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l-3xl border-4 border-pink-200  flex items-center justify-center">
+        rounded-l-3xl
+      </div>
+      <div class="w-24 h-24  bg-pink-800 rounded-l-full border-4 border-pink-200  flex items-center justify-center">
+        rounded-l-full
+      </div>
+      <div class="w-24 h-24  bg-yellow-800 rounded-ss-none rounded-full border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ss-none
+      </div>
+      <div class="w-24 h-24  bg-yellow-800 rounded-ss-sm border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ss-sm
+      </div>
+      <div class="w-24 h-24  bg-yellow-800 rounded-ss-md border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ss-md
+      </div>
+      <div class="w-24 h-24  bg-yellow-800 rounded-ss-lg border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ss-lg
+      </div>
+      <div class="w-24 h-24  bg-yellow-800 rounded-ss-xl border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ss-xl
+      </div>
+      <div class="w-24 h-24  bg-yellow-800 rounded-ss-2xl border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ss-2xl
+      </div>
+      <div class="w-24 h-24  bg-yellow-800 rounded-ss-3xl border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ss-3xl
+      </div>
+      <div class="w-36 h-24  bg-yellow-800 rounded-ss-full border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ss-full
+      </div>
+      <div class="w-36 h-24 bg-yellow-800 rounded-se-none border-4 border-yellow-200  flex items-center justify-center rounded-full">
+        rounded-se-none
+      </div>
+      <div class="w-36 h-24 bg-yellow-800 rounded-se-sm border-4 border-yellow-200  flex items-center justify-center">
+        rounded-se-sm
+      </div>
+      <div class="w-36 h-24 bg-yellow-800 rounded-ee-2xl border-4 border-yellow-200  flex items-center justify-center">
+        rounded-ee-2xl
+      </div>
+      <div class="w-36 h-24 bg-Fuchsia-800 rounded-es-sm border-4 border-green-200  flex items-center justify-center text-white ">
+        rounded-es-sm
+      </div>
+      <div class="w-36 h-24 bg-Fuchsia-800 rounded-tl-3xl border-4 border-green-200  flex items-center justify-center text-white ">
+        rounded-tl-3xl
+      </div>
+      <div class="w-36 h-24 bg-Fuchsia-800 rounded-tr-2xl border-4 border-green-200  flex items-center justify-center text-white ">
+        rounded-tr-2xl
+      </div>
+      <div class="w-36 h-24 bg-Fuchsia-800 rounded-tl-3xl border-4 border-green-200  flex items-center justify-center text-white ">
+        rounded-br-sm
+      </div>
+      <div class="w-36 h-24 bg-Fuchsia-800 rounded-bl-full border-4 border-green-200  flex items-center justify-center text-white ">
+        rounded-bl-full
+      </div>
+      
+          </div>        
+      </div>
+      </div>         
   </body>
 </html>

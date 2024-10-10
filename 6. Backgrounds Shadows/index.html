@@ -8,14 +8,62 @@
     <title>Backgrounds & Shadows</title>
   </head>
   <body>
-    <!-- Background Images -->
+  1. Background Images 
     <!-- https://tailwindcss.com/docs/background-image -->
+    <div class="container text-white bg-black p-7">
+      <div class="h-14 text-center bg-gradient-to-r from-black to-cyan-500">Linear gradient 1</div>
+<div class="h-14 text-center bg-gradient-to-r from-sky-500 to-indigo-900">Linear gradient 2</div>
+<div class="h-14 text-center bg-gradient-to-r from-violet-500 to-fuchsia-500">Linear gradient 3</div>
+<div class="h-14 text-center bg-gradient-to-r from-blue-500 to-pink-500">Linear gradient 4</div>
+<div class="h-14 text-center bg-gradient-to-bl from-purple-900 to-orange-900">Linear gradient 5</div>
+<div class="h-14 text-center bg-gradient-to-tl from-fuchsia-600 to-pink-700">Linear gradient 6</div>
+<div class="h-14 text-center bg-gradient-to-tr from-green-900 to-yellow-700">Linear gradient 7</div>
+<div class="h-14 text-center bg-gradient-to-t from-pink-800 to-purple-900">Linear gradient 8</div>
+<div class="h-14 text-center bg-gradient-to-t from-white to-black">Linear gradient 9</div>
 
-    <!-- Shadows -->
+
+</div>
+
+
+
+
+2. Shadows 
     <!-- https://tailwindcss.com/docs/drop-shadow -->
-    <!-- I know we didn't cover flexbox, but it's just for demo purposes -->
+     <br>
+    
+ know we didn't cover flexbox, but it's just for demo purposes 
+    <div class="container text-black bg-black p-7 flex gap-4 ">
+    <div class="shadow-md  shadow-red-700      h-24 w-24 p-2 rounded-md bg-yellow-300"> Drop-shadow-md </div> 
+    <div class="shadow-lg  shadow-green-300    h-24 w-24 p-2 rounded-md bg-lime-900">Drop-shadow-lg </div>
+    <div class="shadow-xl   shadow-yellow-700  h-24 w-24 p-2 rounded-md bg-red-300"> Drop-shadow-xl</div>
+    <div class="shadow-2xl shadow-fuchsia-600  h-24 w-24 p-2 rounded-md bg-blue-300">Drop-shadow-2xl</div>
+    <div class="shadow-4xl  shadow-pink-900    h-24 w-24  p-2 rounded-md bg-green-300">Drop-shadow-4xl</div>
+    <div class="shadow-sm   shadow-white       h-24 w-24  p-2 rounded-md bg-red-500">Drop-shadow-sm</div>
+    <div class="shadow-inner  shadow-cyan-600  h-24 w-24  p-2 rounded-md bg-rose-500">Drop-shadow-inner</div>
+    <div class="shadow-2xl  shadow-blue-900    h-24 w-24  p-2 rounded-md bg-orange-600"></div>
+    <div class="shadow-2xl  shadow-green-900   h-24 w-24  p-2 rounded-md bg-amber-500"></div>
+     
+    <div class="text-white bg-black  ">
+      <button class="bg-sky-500 hover:bg-sky-700 rounded-md w-24 h-24">
+       Hover
+      </button> 
+      
+      
+    </div>
 
-    <!-- Gradients -->
+</div>
+    3 . Gradients 
     <!-- https://tailwindcss.com/docs/gradient-color-stops -->
+    <div class="container text-black bg-black p-7 ">
+      <div class="bg-gradient-to-t from-red-800 to-green-600 p-4 m-4"></div>
+      <div class="bg-gradient-to-t from-cyan-800 via-blue-700 to-purple-600 p-4 m-4"></div>
+      <div class="bg-gradient-to-r from-cyan-500 to-blue-500 p-4 m-4"></div>
+      <div class="bg-gradient-to-l from-purple-600 to-blue-500 p-4 m-4 "></div>
+      <div class="bg-gradient-to-b from-blue-500 to-transparent p-4 m-4"></div>
+      <button type="button" class="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 w-24 h-24">
+        Hover me
+      </button>
+      <div class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% p-4 m-4"></div>
+      <div class="bg-gradient-to-l from-teal-500 from-85% via-violet-500 via-30% to-slate-500 to-90% p-4 m-4"></div>
   </body>
 </html>

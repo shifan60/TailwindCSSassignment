@@ -13,17 +13,217 @@
     </style>
   </head>
   <body>
-    <!-- Margin -->
+    1. Margin 
     <!-- https://tailwindcss.com/docs/margin -->
-
-    <!-- Arbitrary Spacing -->
+    <div class="container text-white bg-black p-7">
+    <div class=" mt-36 h-20 w-20 bg-red-500"> mt-36</div>
+    <div class=" ml-8 h-20 w-20 bg-pink-500">ml-8</div>
+    <div class=" mb-36 h-20 w-20 bg-teal-500">mb-36</div>
+    <div class=" mr-4 h-20 w-20 bg-green-500"> mr-4</div>
+    <div class=" mx-8 h-20 w-20 bg-orange-500"> mx-8</div>
+    <div class=" my-8 h-20 w-20 bg-white text-black">my-8</div>
+    <div class=" m-8 h-20 w-20 bg-yellow-500">m-8</div>
+    <div class=" -mt-8 h-20 w-20 bg-rose-500">-mt-8</div>
+    <div dir="ltr">
+      <div class="ms-8 h-20 w-20 bg-green-900">ms-8</div>
+      <div class="me-8 h-20 w-20 bg-amber-500">me-8</div>
+    </div>
+    <div dir="rtl">
+      <div class="ms-8 h-20 w-20 bg-green-900">ms-8</div>
+      <div class="me-8 h-20 w-20 bg-amber-500">me-8</div>
+    </div>
+    </div>
+    2. Arbitrary Spacing 
      <!-- https://tailwindcss.com/docs/border-spacing#arbitrary-values -->
+     <div class="container text-white bg-black p-7">
+     <table class="border-separate border-spacing-x-3 border border-slate-500 ...">
+      <thead>
+        <tr>
+          <th class="border border-slate-600 ...">State</th>
+          <th class="border border-slate-600 ...">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700 ...">Indiana</td>
+          <td class="border border-slate-700 ...">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Ohio</td>
+          <td class="border border-slate-700 ...">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Michigan</td>
+          <td class="border border-slate-700 ...">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+---------------------------------------------------------------------------------------------------------------------
 
-    <!-- Padding -->
+    <table class="border-separate border-spacing-y-3 border border-slate-500 ...">
+      <thead>
+        <tr>
+          <th class="border border-slate-600 ...">State</th>
+          <th class="border border-slate-600 ...">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700 ...">Indiana</td>
+          <td class="border border-slate-700 ...">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Ohio</td>
+          <td class="border border-slate-700 ...">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Michigan</td>
+          <td class="border border-slate-700 ...">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+    ------------------------------------------------------------------------------------------------------------------------------
+    <table class="border-separate border-spacing-px border border-slate-500 ...">
+      <thead>
+        <tr>
+          <th class="border border-slate-600 ...">State</th>
+          <th class="border border-slate-600 ...">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700 ...">Indiana</td>
+          <td class="border border-slate-700 ...">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Ohio</td>
+          <td class="border border-slate-700 ...">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Michigan</td>
+          <td class="border border-slate-700 ...">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+    ---------------------------------------------------------------------------------------------------------------------
+    <table class="border-separate border-spacing-x-1 border border-slate-500 ...">
+      <thead>
+        <tr>
+          <th class="border border-slate-600 ...">State</th>
+          <th class="border border-slate-600 ...">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700 ...">Indiana</td>
+          <td class="border border-slate-700 ...">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Ohio</td>
+          <td class="border border-slate-700 ...">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Michigan</td>
+          <td class="border border-slate-700 ...">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+    =========================================================================================
+    <table class="border-separate border-spacing-y-96 border border-slate-500 ...">
+      <thead>
+        <tr>
+          <th class="border border-slate-600 ...">State</th>
+          <th class="border border-slate-600 ...">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700 ...">Indiana</td>                                 
+          <td class="border border-slate-700 ...">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Ohio</td>
+          <td class="border border-slate-700 ...">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Michigan</td>
+          <td class="border border-slate-700 ...">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+    =======================================================================================
+    <table class="border-separate border-spacing-x-96 border border-slate-500 ...">
+      <thead>
+        <tr>
+          <th class="border border-slate-600 ...">State</th>
+          <th class="border border-slate-600 ...">City</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700 ...">Indiana</td>                                 
+          <td class="border border-slate-700 ...">Indianapolis</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Ohio</td>
+          <td class="border border-slate-700 ...">Columbus</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Michigan</td>
+          <td class="border border-slate-700 ...">Detroit</td>
+        </tr>
+      </tbody>
+    </table>
+     </div>
+
+    3. Padding 
     <!-- https://tailwindcss.com/docs/padding -->
-
+    <div class="container text-white bg-black p-7">
+    <div class="pt-6  h-20 w-20 bg-green-900">pt-6</div>
+    <div class="pr-4 h-20 w-20 bg-red-900">pr-4</div>
+    <div class="pb-8 h-20 w-20 bg-teal-900">pb-8</div>
+    <div class="pl-2 h-20 w-20 bg-rose-900">pl-2</div>
+    <div class="pe-20 h-20 w-20 bg-yellow-900">pe-20</div>      
+    <div class="p-24 h-20 w-20 bg-cyan-500">P-24</div>  
+                  
+    </div>
     <!-- https://tailwindcss.com/docs/space -->
-    <!-- Space Between X -->
-    <!-- Space Between Y -->
+    * Space Between X 
+     <div class="container bg-black p-7 text-black ">
+    <div class="flex space-x-4 ">
+      <div class="w-20 h-20 bg-white">01</div>
+      <div class="w-20 h-20 bg-white">02</div>
+      <div class="w-20 h-20 bg-white">03</div>
+    </div>
+    </div>  
+    * Space Between Y 
+
+    <div class="container bg-black p-7 text-black ">
+    <div class="flex flex-col space-y-4 ...">
+      <div class="w-40 h-10 bg-white">01</div>
+      <div class="w-40 h-10 bg-white">02</div>
+      <div class="w-40 h-10 bg-white">03</div>
+    </div>
+    </div>
+
+    * space X-reverse
+
+    <div class="container bg-black p-7 text-black ">
+    <div class="flex flex-row-reverse space-x-4 space-x-reverse ...">
+      <div  class="w-20 h-20 bg-white">01</div>
+      <div  class="w-20 h-20 bg-white">02</div>
+      <div  class="w-20 h-20 bg-white">03</div>
+    </div>
+  </div>
+
+  * space space-x-reverse
+
+  <div class="container bg-black p-7 text-black ">
+    <div class="flex flex -space-x-4 ....">
+      <div  class="w-20 h-20 bg-white">01</div>
+      <div  class="w-20 h-20 bg-white">02</div>
+      <div  class="w-20 h-20 bg-white">03</div>
+    </div>
+  </div>
   </body>
 </html>
