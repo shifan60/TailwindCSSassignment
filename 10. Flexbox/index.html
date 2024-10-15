@@ -7,173 +7,346 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Flex</title>
   </head>
-  <div>
-    1. Flex
-
+  <body>
     <!-- https://tailwindcss.com/docs/flex -->
-    <div class="container text-white bg-black p-7 flex gap-4">
-      <div class="flex-none w-14 bg-blue-400">
-        flex-none
-      </div>
-      <div class="flex-initial w-64 bg-blue-500">
-        flex-initial
-      </div>
-      
-      <div class="flex-1 w-32 bg-blue-600">
-        flex-1
-      </div>
-    </div>
-
-    <div class="container text-white bg-black p-7 flex gap-4 ">
-  <div class="flex-none w-14 bg-red-400 ">
-    01
+ <h1 class="font-bold flex justify-center underline">Flex</h1>
+ <br>
+<div class="container bg-black p-7 text-black">
+  <h1 class="text-white underline">
+    initial
+  </h1>
+  <br>
+  <p class="text-white">Use flex-initial to allow a flex item to shrink but not grow, taking into account its initial size:</p>
+  <br>
+  <div class="flex bg-gray-200">
+  <div class="flex-initial text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Short
   </div>
-  <div class="flex-auto w-64 bg-red-500">
-    02
-  </div>
-  <div class="flex-auto w-32 bg-red-600">
-    03
+  <div class="flex-initial text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Medium length
   </div>
 </div>
-
-<div class="container text-white bg-black p-7 flex gap-4">
-  <div class="flex-none w-14 bg-yellow-500">
-    07
+<br>
+<p class="text-white">Items don't grow when there's extra space</p>
+<br>
+<div class="flex bg-gray-200">
+  <div class="flex-initial text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Short
   </div>
-  <div class="flex-none w-32 bg-yellow-600">
-    08
+  <div class="flex-initial text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Medium length
   </div>
-  <div class="flex-1 bg-yellow-700">
-    09
-  </div>
-  <div class="flex-[2_2_0%] bg-green-800">
-    arbitary-value
+  <div class="flex-initial text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ad labore ipsam, aut rem quo repellat esse tempore id, quidem
   </div>
 </div>
-
-
-2.Flex Direction
-
+<br>
+<p class="text-white">Items shrink if possible when needed</p>
+<br>
+<h1 class="text-white underline">
+  flex-1
+</h1>
+<br>
+<p class="text-white">Use flex-1 to allow a flex item to grow and shrink as needed, ignoring its initial size:</p>
+<br>
+<div class="flex bg-gray-200">
+  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Short
+  </div>
+  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Medium length
+  </div>
+  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Significantly larger amount of content
+  </div>
+</div>
+<br>
+<h1 class="text-white underline">flex-auto</h1>
+<br>
+<p class="text-white">Use flex-auto to allow a flex item to grow and shrink, taking into account its initial size:</p>
+<br>
+<div class="flex bg-gray-200">
+  <div class="flex-auto text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Short
+  </div>
+  <div class="flex-auto text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Medium length
+  </div>
+  <div class="flex-auto text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Significantly larger amount of content
+  </div>
+</div>
+<br>
+<h1 class="text-white underline">flex-none</h1>
+<br>
+<p class="text-white">Use flex-none to prevent a flex item from growing or shrinking: </p>
+<br>
+<div class="flex bg-gray-200">
+  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Item that can grow or shrink if needed
+  </div>
+  <div class="flex-none text-gray-800 text-center bg-gray-500 px-4 py-2 m-2">
+    Item that cannot grow or shrink
+  </div>
+  <div class="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">
+    Item that can grow or shrink if needed
+  </div>
+</div>
+</div>
+<br>
+<h1 class="font-bold flex justify-center underline">Flex Direction</h1>
+<br>
     <!-- https://tailwindcss.com/docs/flex-direction#column -->
-    <div class="container text-white bg-black p-7">
-      <div class="flex flex-row gap-6 bg-pink-300">
-        <div class="flex flex-row gap-6 bg-pink-300 ">01</div>
-        <div class="flex flex-row gap-6 bg-pink-300  w-16  border-2 items-center">02</div>
-        <div class="flex flex-row gap-6 bg-pink-300 border-4 w-16">03</div>
-      </div>
-      </div>
-
-      ** reverse
-
-      <div class="container text-white bg-black p-7">
-      <div class="flex flex-row-reverse bg-pink-600 gap-6">
-        <div class="flex flex-row-reverse  bg-pink-300 border-4 w-16">01</div>
-        <div class="flex flex-row-reverse  bg-pink-300 border-4 w-16">02</div>
-        <div class="flex flex-row-reverse  bg-pink-300 border-4 w-16">03</div>
-      </div>
-      </div>
-
-      ** Column
-
-      <div class="flex flex-col bg-green text-center px-4 py-2">
-        <div div class="flex flex-col  bg-yellow-300 border-2 text-justify items-center">01</div>
-        <div div class="flex flex-col  bg-yellow-400 border-2 text-center ">02</div>
-        <div div class="flex flex-col  bg-yellow-500 border-2 text-center ">03</div>
-      </div>
-
-      ** Col reverse
-     
-      <div class="flex flex-col-reverse">
-        <div  class="flex flex-col-reverse bg-pink-300 border-2 text-center " >01</div>
-        <div  class="flex flex-col-reverse bg-pink-300 border-2 text-center ">02</div>
-        <div  class="flex flex-col-reverse bg-pink-300 border-2 text-center ">03</div>
-    </div>
-
-      3. Justify
-    <!-- https://tailwindcss.com/docs/justify-items -->
-    <div class="container text-white bg-black p-7 gap-4">
-    <div class="grid justify-items-start flex justify-item ">
-      <div class=" bg-cyan-300 justify-items-start w-96 ">justify-items-start</div>
-      <div class=" bg-cyan-400 justify-items-start w-96 ">justify-items-start</div>
-      <div class=" bg-cyan-500 justify-items-start w-96 ">justify-items-start</div>
-      <div class=" bg-cyan-600 justify-items-start w-96 ">justify-items-start</div>
-      <div class=" bg-cyan-700 justify-items-start w-96 ">justify-items-start</div>
-      <div class=" bg-cyan-800 justify-items-start w-96 ">justify-items-start</div>
-    </div>
-
-    <div class="grid justify-items-end flex justify-item ">
-      <div class="bg-amber-200   justify-items-end w-96 ">justify-items-end</div>
-      <div class="bg-amber-300  justify-items-end w-96 ">justify-items-end</div>
-      <div class="bg-amber-400  justify-items-end w-96 ">justify-items-end</div>
-      <div class="bg-amber-500  justify-items-end w-96 ">justify-items-end</div>
-      <div class="bg-amber-600  justify-iems-end  w-96 ">justify-items-end</div>
-      <div class="bg-amber-700  justify-iems-end  w-96 ">justify-items-end</div>
-    </div>
-    <div class="grid justify-items-center flex justify-item ">
-      <div class="bg-blue-200 justify-itemscenter w-96 ">justify-items-center</div>
-      <div class="bg-blue-300 justify-itemscenter w-96 ">justify-items-center</div>
-      <div class="bg-blue-400 justify-itemscenter w-96 ">justify-items-center</div>
-      <div class="bg-blue-500 justify-itemscenter w-96 ">justify-items-center</div>
-      <div class="bg-blue-600 justify-iems-center w-96 ">justify-items-center</div>
-      <div class="bg-blue-700 justify-iems-center w-96 ">justify-items-center</div>
-    </div>
-
-    </div>
-
-    <div class="container text-white bg-black p-7 gap-4">
-<!-- https://tailwindcss.com/docs/order -->
-** order
-<h1>order-first</h1>
-<div class="flex justify-between w-96 "> 
-  <div class="  bg-red-700  ">01</div>
-  <div class="  bg-red-700 ">02</div>
-  <div class="  bg-red-700 ">03</div>
-  <div class=" order-first bg-red-700 ">04</div>
-  <div class="  bg-red-700 ">05</div>
-  <div class="  bg-red-700 ">06</div>
-  <div class="  bg-red-700 ">07</div>
-  <div class="  bg-red-700 ">08</div>
-  <div class="  bg-red-700 ">09</div>
-  <div class="  bg-red-700">10</div>
-  <div class="  bg-red-700">11</div>
-  <div class="  bg-red-700">12</div>
-
+<div class="container bg-black p-7 text-black ">
+   <h1 class="text-white underline">Row</h1>
+   <br>
+   <div class="flex flex-row ">
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+1
 </div>
-<h1>order-last</h1>
-<div class="flex justify-between w-96 "> 
-  <div class="order-last bg-green-700  ">01</div>
-  <div class=" bg-green-700 ">02</div>
-  <div class=" bg-green-700 ">03</div>
-  <div class=" bg-green-700 ">04</div>
-  <div class=" bg-green-700 ">05</div>
-  <div class=" bg-green-700 ">06</div>
-  <div class=" bg-green-700 ">07</div>
-  <div class=" bg-green-700 ">08</div>
-  <div class=" bg-green-700 ">09</div>
-  <div class="  bg-green-700">10</div>
-  <div class="  bg-green-700">11</div>
-  <div class="  bg-green-700">12</div>
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+2
 </div>
-<div class="flex justify-between w-96 "> 
-  <h1>order-none</h1><br>
-  <div class="order-none bg-violet-900  ">01</div>
-  <div class="order-none  bg-violet-900 ">02</div>
-  <div class="order-none  bg-violet-900 ">03</div>
-  <div class="order-none  bg-violet-900 ">04</div>
-  <div class="order-none  bg-violet-900 ">05</div>
-  <div class="order-none  bg-violet-900 ">06</div>
-  <div class="order-none  bg-violet-900 ">07</div>
-  <div class="order-none  bg-violet-900 ">08</div>
-  <div class="order-none  bg-violet-900 ">09</div>
-  <div class="order-none  bg-violet-900 ">10</div>
-  <div class="order-none  bg-violet-900 ">11</div>
-  <div class="order-none  bg-violet-900 ">12</div>
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+3
 </div>
-
+   </div>
+   <br>
+   <h1 class="text-white underline">Row reversed</h1>
+   <br>
+   <div class="flex flex-row-reverse ">
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+1
+</div>
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+2
+</div>
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+3
+</div>
+   </div>
+   <h1 class="text-white underline">Column</h1>
+   <br>
+   <div class="flex flex-col justify-center">
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+1
+</div>
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+2
+</div>
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+3
+</div>
+<br>
+<h1 class="text-white underline">Column reversed</h1>
+<br>
+<div class="flex flex-col-reverse ">
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+1
+</div>
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+2
+</div>
+<div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+3
+</div>
+</div>
+</div>
+</div>
+<br>
+<h1 class="text-black underline font-bold flex justify-center">justify items</h1>
+<br>
+<!-- https://tailwindcss.com/docs/justify-items -->
+<div class="container bg-black p-7 text-black">
+<h1 class="text-white underline">Start</h1>
+<br>
+<div class="grid justify-items-start border-4 border-red-500   ">
+  <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+    1
     </div>
-
-    <!-- Grow and shrink -->
-    <!-- https://tailwindcss.com/docs/flex-shrink -->
-
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+    2
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+    3
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+      4
+      </div> <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+        5
+        </div> <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+          6
+          </div>
+</div>
+<br>
+<h1 class="text-white underline">End</h1>
+<br>
+<div class=" grid justify-items-end border-4 border-red-500   ">
+  <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+    1
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+    2
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+    3
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+      4
+      </div> <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+        5
+        </div> <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+          6
+          </div>
+</div>
+<br>
+<h1 class="text-white underline">Center</h1>
+<br>
+<div class=" grid justify-items-center border-4 border-red-500   ">
+  <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+    1
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+    2
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+    3
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+      4
+      </div> <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+        5
+        </div> <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+          6
+          </div>
+</div>
+<br>
+<h1 class="text-white underline">Stretch</h1>
+<br>
+<div class=" grid grid-cols-3 gap-4 justify-items-stretch  border-2 border-red-500  ">
+  <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+    1
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+    2
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+    3
+    </div>
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+      4
+      </div>
+      <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+        5
+        </div>
+        <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+          6
+          </div>
+</div>
+    </div>
+    <br>
+<h1 class="text-black underline font-bold flex justify-center">Ordering flex and grid items</h1>
+<br>
+ <!-- https://tailwindcss.com/docs/order -->
+<div class="container bg-black p-7 text-black">
+  <h1 class="text-white underline">order-last</h1>
+  <br>
+  <div class=" flex justify-between ">
+    <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold order-last">
+      1
+      </div>
+      <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+      2
+      </div>
+      <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold  ">
+      3
+      </div>
+      <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+        4
+        </div>
+        <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+          5 
+          </div>
+          <div class="w-24 h-24   bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+            6</div>
+   </div>
+   <br>
+   <h1 class="text-white underline">order-first</h1>
+   <br>
+   <div class=" flex justify-between ">
+     <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+       1
+       </div>
+       <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+       2
+       </div>
+       <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold  ">
+       3
+       </div>
+       <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold order-first">
+         4
+         </div>
+         <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+           5 
+           </div>
+           <div class="w-24 h-24   bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+             6</div>
+             </div>
+             <br>
+   <h1 class="text-white underline">-order-1</h1>
+   <br>
+   <div class=" flex justify-between ">
+     <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+       1
+       </div>
+       <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+       2
+       </div>
+       <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold  ">
+       3
+       </div>
+       <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold -order-1">
+         4
+         </div>
+         <div class="w-24 h-24 bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold ">
+           5 
+           </div>
+           <div class="w-24 h-24   bg-white border-2 border-red-500 flex items-center justify-center text-2xl font-bold">
+             6</div>
+             </div>
+             </div>
+             <br>
+             <h1 class="text-black underline font-bold flex justify-center">Flex Shrink</h1>
+             <br>
+              <!-- https://tailwindcss.com/docs/flex-shrink -->
+             <div class="container bg-black p-7 text-black">
+               <h1 class="text-white underline">Shrink</h1>
+               <br>
+               <div class="flex ">
+                <div class="flex-grow w-16 h-16 bg-pink-200 border-4 border-pink-800">
+                  <!-- This item will grow or shrink as needed -->
+                </div>
+                <div class="flex-shrink w-64 h-16 bg-pink-600 border-4 border-fuchsia-200 flex items-center justify-center font-bold">
+                  <!-- This item will shrink -->shrink
+                </div>
+                <div class="flex-grow w-16 h-16 bg-pink-200 border-4 border-pink-800">
+                  <!-- This item will grow or shrink as needed -->
+                </div>
+              </div>
+<br>
+<h1 class="text-white underline">Don’t shrink</h1>
+<br>
+<div class="flex">
+  <div class="flex-1 h-16  bg-fuchsia-200 border-4 border-fuchsia-800">
+    <!-- This item will grow or shrink as needed -->
+  </div>
+  <div class="flex-shrink-0 h-16 w-32  bg-fuchsia-800 border-4 border-fuchsia-200 flex items-center justify-center font-bold">
+    <!-- This item will not shrink below its initial size-->shrink-0
+  </div>
+  <div class="flex-1 h-16  bg-fuchsia-200 border-4 border-fuchsia-800">
+    <!-- This item will grow or shrink as needed -->
+  </div>
+</div>
+    </div>
   </body>
 </html>
